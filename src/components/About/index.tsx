@@ -27,7 +27,7 @@ const About: React.FC<Props> = ({ toggleTheme }) => {
                     Comecei minha jornada na programação em 2021, quando ingressei no IFRN integrado em informática, de lá pra cá descobri sou um apaixonado por tecnologia e por desenvolvimento pessoal.
                 </Description>
                 <Description>
-                    Atualmente estou estudando linguagens/frameworks como: Javascript, TypeScript, React, React Native, NodeJS entre outras tecnologias que uso para criar aplicações web/mobile de alto nível e valor.
+                    Atualmente estou estudando HTML, CSS, JavaScript e /frameworks como: TypeScript, React, React Native, NodeJS entre outras tecnologias que uso para criar aplicações web de alto nível e valor.
                 </Description>
                 <Description>
                     Meu foco é aprender novas coisas e aprimorar ainda mais as habilidades que possuo, gosto sempre de estar em constante aprendizado e evoluindo dia após dia, e agregando muito valor.</Description>

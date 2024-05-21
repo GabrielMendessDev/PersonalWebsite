@@ -1,4 +1,5 @@
 import podcast from './assets/mock/podcast.png';
+import links from './assets/mock/links.png';
 
 
 const ProjectsData = [
@@ -10,6 +11,15 @@ const ProjectsData = [
         "tool": "React · Firebase",
         "github": "https://github.com/GabrielMendessDev/Projeto-RPP-IFRN-Extensao-Podcast-Informatizando",
         "link" : "https://github.com/GabrielMendessDev/Projeto-RPP-IFRN-Extensao-Podcast-Informatizando",
+    },
+    {
+        "id": 2,
+        "img": links,
+        "title": "Agregador de Links",
+        "description": "Projeto desenvolvido para divulgar os links de maneira mais organizada",
+        "tool": "React · Firebase",
+        "github": "https://github.com/GabrielMendessDev/links",
+        "link" : "https://GabrielMendessDev.github.io/links",
     },
 ]
 
