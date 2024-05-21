@@ -16,7 +16,7 @@ const About: React.FC<Props> = ({ toggleTheme }) => {
 
     return (
         <ContainerAbout id="sobre">
-            <Image src={photo} alt="Gabriel Barbosa" />
+            <Image src={photo} alt="Gabriel Mendes" />
 
             <SubContainerAbout>
                 <SubTitle>
@@ -24,7 +24,7 @@ const About: React.FC<Props> = ({ toggleTheme }) => {
                 </SubTitle>
 
                 <Description>
-                    Comecei minha jornada na programação em 2019, quando ingressei em uma escola técnica de informatíca, de lá pra cá descobri sou um apaixonado por tecnologia e por desenvolvimento pessoal.
+                    Comecei minha jornada na programação em 2021, quando ingressei no IFRN integrado em informática, de lá pra cá descobri sou um apaixonado por tecnologia e por desenvolvimento pessoal.
                 </Description>
                 <Description>
                     Atualmente estou estudando linguagens/frameworks como: Javascript, TypeScript, React, React Native, NodeJS entre outras tecnologias que uso para criar aplicações web/mobile de alto nível e valor.
