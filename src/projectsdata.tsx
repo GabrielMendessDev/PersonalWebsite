@@ -9,6 +9,7 @@ const ProjectsData = [
         "description": "Projeto desenvolvido com o intuito de promover a democracia virtual acerca de temas da atualidade",
         "tool": "React · Firebase",
         "github": "https://github.com/GabrielMendessDev/Projeto-RPP-IFRN-Extensao-Podcast-Informatizando",
+        "link" : "https://github.com/GabrielMendessDev/Projeto-RPP-IFRN-Extensao-Podcast-Informatizando",
     },
 ]
 
