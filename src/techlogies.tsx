@@ -1,23 +1,23 @@
 const TechlogiesData = [
     {
         "id": 1,
-        "name": "JavaScript"
+        "name": "HTML"
     },
     {
         "id": 2,
-        "name": "React JS"
+        "name": "CSS"
     },
     {
         "id": 3,
-        "name": "React Native"
+        "name": "JavaScript"
     },
     {
         "id": 4,
-        "name": "TypeScript"
+        "name": "Node JS"
     },
     {
         "id": 5,
-        "name": "NextJs"
+        "name": "React"
     },
     {
         "id": 6,
@@ -25,7 +25,7 @@ const TechlogiesData = [
     },
     {
         "id": 7,
-        "name": "Firebase"
+        "name": "TypeScript"
     },
     {
         "id": 7,
@@ -33,11 +33,19 @@ const TechlogiesData = [
     },
     {
         "id": 8,
-        "name": "Git"
+        "name": "PHP"
     },
     {
         "id": 9,
-        "name": "GitHub"
+        "name": "Git"
+    },
+    {
+        "id": 10,
+        "name": "Github"
+    },
+    {
+        "id": 11,
+        "name": "Virtual Studio Code"
     }
 ]
 
