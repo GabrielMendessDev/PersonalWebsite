@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
-import ProjectsData from '../../projectsdata';
+import ProjectsData, { Project } from '../../projectsdata';
 
 import {
     ContainerProjects,
@@ -10,7 +10,7 @@ import {
     ButtonSeeMore,
     TextSeeMore,
     ContainerAllProjects,
-    Project,
+    Project as ProjectComponent,
     BoxImage,
     Image,
     ContainerTitle,
@@ -34,17 +34,48 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
     const { colors, title } = useContext(ThemeContext);
     AOS.init();
     const [controller, setController] = useState(false);
+    const [repos, setRepos] = useState<Project[]>([]);
+
+    useEffect(() => {
+        async function fetchRepos() {
+            const username = 'GabrielMendessDev'; // Substitua pelo seu nome de usuário do GitHub
+            const url = `https://api.github.com/users/${username}/repos`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Erro ao buscar repositórios');
+
+                const data = await response.json();
+                const repos: Project[] = data.map((repo: any) => ({
+                    id: repo.id,
+                    img: '', // Não temos imagem para repositórios do GitHub
+                    title: repo.name,
+                    description: repo.description || 'Sem descrição',
+                    tool: repo.language || 'Linguagem não especificada',
+                    github: repo.html_url,
+                    link: repo.html_url,
+                }));
+                setRepos(repos);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchRepos();
+    }, []);
 
     function seeMore() {
         setController(!controller);
     }
-    let teste;
 
-    if (controller == true) {
+    let teste;
+    if (controller) {
         teste = Infinity;
     } else {
-        teste = 3
+        teste = 3;
     }
+
+    const allProjects = [...ProjectsData, ...repos];
 
     return (
         <ContainerProjects id="projetos">
@@ -59,12 +90,12 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
             </SubContainerProjects>
 
             <ContainerAllProjects>
-                {ProjectsData.slice(0, teste).map((item) => {
+                {allProjects.slice(0, teste).map((item) => {
                     const { id, img, title, description, tool, link, github } = item;
                     return (
-                        <Project key={id} data-aos="zoom-in">
+                        <ProjectComponent key={id} data-aos="zoom-in">
                             <BoxImage>
-                                <Image src={img} />
+                                {img && <Image src={img} />}
                             </BoxImage>
 
                             <ContainerTitle>
@@ -77,8 +108,8 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
 
                             <Description>{description}</Description>
                             <Tools>{tool}</Tools>
-                        </Project>
-                    )
+                        </ProjectComponent>
+                    );
                 })}
             </ContainerAllProjects>
         </ContainerProjects>
