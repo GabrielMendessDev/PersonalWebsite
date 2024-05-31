@@ -117,7 +117,8 @@ export const Description = styled.span`
     color: ${props => props.theme.colors.secundary};
     margin: 0 30px;
     text-align: justify;
-    height: 175px;
+    max-height: 175px; /* Defina a altura máxima desejada */
+    overflow: hidden; /* Esconde o texto que ultrapassa a altura máxima */
     hyphens: auto;
     -webkit-hyphens: auto;
     word-spacing: -0.05em;

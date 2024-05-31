@@ -21,10 +21,6 @@ const TechlogiesData = [
     },
     {
         "id": 6,
-        "name": "NodeJs"
-    },
-    {
-        "id": 7,
         "name": "TypeScript"
     },
     {
