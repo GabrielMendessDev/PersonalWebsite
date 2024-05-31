@@ -25,18 +25,25 @@ import 'aos/dist/aos.css';
 import { FiExternalLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 
+// Importando as imagens das logos das linguagens existentes
+import javascriptLogo from '../../assets/javascript-logo.png';
+import typescriptLogo from '../../assets/typescript-logo.png';
+import pythonLogo from '../../assets/python-logo.png';
+import phpLogo from '../../assets/php-logo.png';
+import htmlLogo from '../../assets/html-logo.png';
+import cssLogo from '../../assets/css-logo.png';
+
 interface Props {
     toggleTheme(): void;
 }
 
-
 const languageLogos: { [key: string]: string } = {
-    JavaScript: '../../assets/javascript-logo.png',
-    TypeScript: '../../assets/typescript-logo.png',
-    Python: '../../assets/python-logo.png',
-    PHP: '../../assets/php-logo.png',
-    HTML: '../../assets/html-logo.png',
-    CSS: '../../assets/css-logo.png',
+    JavaScript: javascriptLogo,
+    TypeScript: typescriptLogo,
+    Python: pythonLogo,
+    PHP: phpLogo,
+    HTML: htmlLogo,
+    CSS: cssLogo,
     // Adicione outras linguagens e logos conforme necessário
 };
 
