@@ -103,6 +103,9 @@ export const TitleProject = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: ${props => props.theme.colors.text};
     font-size: 25px;
 `;
@@ -127,3 +130,9 @@ export const Tools = styled.span`
     color: ${props => props.theme.colors.secundary};
     margin: 20px 30px 30px 30px;
 `;
+
+export const LanguageLogo = styled.img`
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+`

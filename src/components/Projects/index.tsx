@@ -11,13 +11,12 @@ import {
     TextSeeMore,
     ContainerAllProjects,
     Project as ProjectComponent,
-    BoxImage,
-    Image,
     ContainerTitle,
     SubContainerTitle,
     TitleProject,
     Description,
     Tools,
+    LanguageLogo,
 } from './styles';
 
 import Media from 'react-media';
@@ -29,6 +28,17 @@ import { AiFillGithub } from "react-icons/ai";
 interface Props {
     toggleTheme(): void;
 }
+
+
+const languageLogos: { [key: string]: string } = {
+    JavaScript: '../../assets/javascript-logo.png',
+    TypeScript: '../../assets/typescript-logo.png',
+    Python: '../../assets/python-logo.png',
+    PHP: '../../assets/php-logo.png',
+    HTML: '../../assets/html-logo.png',
+    CSS: '../../assets/css-logo.png',
+    // Adicione outras linguagens e logos conforme necessário
+};
 
 const Projects: React.FC<Props> = ({ toggleTheme }) => {
     const { colors, title } = useContext(ThemeContext);
@@ -48,7 +58,6 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
                 const data = await response.json();
                 const repos: Project[] = data.map((repo: any) => ({
                     id: repo.id,
-                    img: '', // Não temos imagem para repositórios do GitHub
                     title: repo.name,
                     description: repo.description || 'Sem descrição',
                     tool: repo.language || 'Linguagem não especificada',
@@ -91,13 +100,9 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
 
             <ContainerAllProjects>
                 {allProjects.slice(0, teste).map((item) => {
-                    const { id, img, title, description, tool, link, github } = item;
+                    const { id, title, description, tool, link, github } = item;
                     return (
                         <ProjectComponent key={id} data-aos="zoom-in">
-                            <BoxImage>
-                                {img && <Image src={img} />}
-                            </BoxImage>
-
                             <ContainerTitle>
                                 <TitleProject>{title}</TitleProject>
                                 <SubContainerTitle>
@@ -107,7 +112,12 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
                             </ContainerTitle>
 
                             <Description>{description}</Description>
-                            <Tools>{tool}</Tools>
+                            <Tools>
+                                {tool}
+                                {tool && languageLogos[tool] && (
+                                    <LanguageLogo src={languageLogos[tool]} alt={`${tool} logo`} />
+                                )}
+                            </Tools>
                         </ProjectComponent>
                     );
                 })}
