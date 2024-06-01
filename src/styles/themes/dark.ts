@@ -17,7 +17,7 @@ export default{
 
         scrollbar: {
             width: '10px', /* Largura da barra de rolagem */
-            thumbColor: '#2b13b3', /* Cor do botão de rolagem */
+            thumbColor: 'rgba(0, 250, 220, 0.2)', /* Cor do botão de rolagem */
             thumbBorderRadius: '5px' /* Bordas arredondadas */
         }
     }
