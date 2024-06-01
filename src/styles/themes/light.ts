@@ -13,11 +13,5 @@ export default{
 
         backgroundpresentation: '#fff',
         backgroundpresentation780: '#fff',
-
-        scrollbar: {
-            width: '10px', /* Largura da barra de rolagem */
-            thumbColor: '#CCCCCC', /* Cor do botão de rolagem */
-            thumbBorderRadius: '5px' /* Bordas arredondadas */
-        }
     }
 }

@@ -14,11 +14,5 @@ export default{
 
         backgroundpresentation: 'radial-gradient(46.97% 53.54% at 50% 46.46%, rgba(0, 250, 220, 0.2) 0%, rgba(0, 1, 2, 0) 100%), #232532',
         backgroundpresentation780: 'radial-gradient(97% 53.54% at 50% 46.46%, rgba(0, 250, 220, 0.2) 0%, rgba(0, 1, 2, 0) 100%), linear-gradient(0deg, #232532, #232532), rgb(255, 255, 255)',
-
-        scrollbar: {
-            width: '10px', /* Largura da barra de rolagem */
-            thumbColor: 'rgba(0, 250, 220, 0.2)', /* Cor do botão de rolagem */
-            thumbBorderRadius: '5px' /* Bordas arredondadas */
-        }
     }
 }
