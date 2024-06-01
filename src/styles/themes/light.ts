@@ -9,7 +9,7 @@ export default{
         text: '#636466',
         buttonText: '#fff',
 
-        shadow: '0px 0px 10px rgba(0, 0, 0, 0.15)',
+        shadow: '0px 0px 10px #37D892',
 
         backgroundpresentation: '#fff',
         backgroundpresentation780: '#fff',
