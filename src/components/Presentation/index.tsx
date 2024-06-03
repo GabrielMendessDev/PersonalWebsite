@@ -41,7 +41,7 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
                 <TextNavs href="#sobre">Sobre</TextNavs>
                 <TextNavs href="#projetos">Projetos</TextNavs>
                 <TextNavs href="#contato">Contato</TextNavs>
-                {/* <li className='switchCenter'>
+                <li className='switchCenter'>
                     <Switch
                         onChange={toggleTheme}
                         checked={title === 'light'}
@@ -55,7 +55,7 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
                         onColor="#2E2F31"
                         activeBoxShadow="0 0 2px 3px #33bbff0"
                     />
-                </li> */}
+                </li>
             </Navigations>
 
         </ContainerPresentation >
