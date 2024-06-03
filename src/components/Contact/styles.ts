@@ -52,7 +52,7 @@ export const BoxContact = styled.a`
 
     &:hover, :focus{
         background-color: rgb(57 23 235 / 42%);
-        border: 1px solid rgb(57 100 235 / 42%);
+        border: 1px solid rgb(57 23 235 / 42%);
     }
 `;
 
@@ -93,19 +93,19 @@ export const LinkText = styled.a`
 export const BoxCV = styled.a`
     display: flex;
     flex-direction: row;
-    border: 1px solid rgb(57 100 235 / 42%);
+    border: 1px solid rgb(57 23 235 / 42%);
     align-items: center;
-    background: rgb(57 100 235 / 42%);
+    background: rgb(57 23 235 / 42%);
     border-radius: 5px;
     padding: 15px 10px 15px 10px;
     width: 200px;
     justify-content: space-around;
-    border: 1px solid rgb(57 100 235 / 42%);
+    border: 1px solid rgb(57 23 235 / 42%);
     transition: all 0.3s ease-in-out;
 
     &:hover, :focus{
         background-color: rgb(57 23 235 / 42%);
-        border: 1px solid rgb(57 100 235 / 42%);
+        border: 1px solid rgb(57 23 235 / 42%);
     }
 `;
 
@@ -152,7 +152,7 @@ export const SocialMedia = styled.a`
 
     &:hover, :focus{
         background-color: rgb(57 23 235 / 42%);
-        border: 1px solid rgb(57 100 235 / 42%);
+        border: 1px solid rgb(57 23 235 / 42%);
     }
 `;
 
