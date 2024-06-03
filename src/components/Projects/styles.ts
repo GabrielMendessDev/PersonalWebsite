@@ -44,8 +44,8 @@ export const ButtonSeeMore = styled.button`
     border-radius: 5px;
 
     &:hover, :focus{
-        background-color: #37D89220;
-        border: 1px solid #37D892;
+        background-color: rgb(57 23 235 / 42%);
+        border: 1px solid rgb(57 100 235 / 42%);
     }
 `;
 

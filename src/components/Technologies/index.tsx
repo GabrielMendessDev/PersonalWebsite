@@ -30,7 +30,7 @@ const Technologies: React.FC<Props> = ({ toggleTheme }) => {
                     const { id, name } = item;
                     return(
                         <BoxTech key={id}>
-                            <ImRadioChecked color="#37D892" size={30}/>
+                            <ImRadioChecked color="rgb(57 23 235 / 42%)" size={30}/>
                             <TextTech>{name}</TextTech>
                         </BoxTech>
                     );

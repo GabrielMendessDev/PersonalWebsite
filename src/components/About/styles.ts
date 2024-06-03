@@ -20,6 +20,7 @@ export const ContainerAbout = styled.div`
 
 export const Image = styled.img`
     width: 500px;
+    box-shadow: 0 2px 24px rgb(57 246 235 / 42%);
 
     @media screen and (max-width: 645px){    
         width: 77vw;
@@ -65,8 +66,8 @@ export const ContainerButtons = styled.div`
 
 export const ContactButton = styled.a`
     display: flex;
-    background: #37D892;
-    border: 1px solid #37D892;
+    background: rgb(57 23 235 / 42%);
+    border: 1px solid rgb(57 23 235 / 42%);
     padding: 20px 40px;
     justify-content: center;
     align-items: center;
@@ -75,12 +76,12 @@ export const ContactButton = styled.a`
     transition: all 0.3s ease-in-out;
 
     &:hover, :focus{
-        background-color: #37D89220;
-        border: 1px solid #37D892;
+        background-color: rgb(1 23 235 / 42%);
+        border: 1px solid rgb(57 23 235 / 42%);
     }
 
     &:hover span, :focus span{
-        color: #37D892;
+        color: rgb(57 23 235 / 42%);
     }
 `;
 
