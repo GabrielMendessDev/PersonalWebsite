@@ -8,8 +8,6 @@ import 'aos/dist/aos.css';
 import { ContainerContact, SubContainerTexts, TextTitle, SubTextTitle, SubContainerContact, BoxContact, Icon, BoxTexts, LinkText, BoxCV, LinkTextCV, ContainerSocialMedias, SocialMedia, Imagem } from './styles';
 import { FiArrowDown } from "react-icons/fi";
 
-import contactImage from '../../assets/mock/contact.png';
-
 interface Props {
     toggleTheme(): void;
 }
@@ -79,8 +77,6 @@ const Contact: React.FC<Props> = ({ toggleTheme }) => {
                 </ContainerSocialMedias>
 
             </SubContainerContact>
-
-            <Imagem src={contactImage}/>
         </ContainerContact>
     );
 }

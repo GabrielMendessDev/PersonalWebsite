@@ -8,9 +8,6 @@ import { IoMdClose } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
 
 import { ContainerPresentation, ContainerMe, TextName, SubText, Navigations, TextNavs, Imagem } from './styles';
-
-import hiImage from '../../assets/mock/hi.png';
-
 interface Props {
     toggleTheme(): void;
 }
@@ -61,7 +58,6 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
                 </li>
             </Navigations>
 
-            <Imagem src={hiImage}/>
         </ContainerPresentation >
     );
 }
