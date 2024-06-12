@@ -11,5 +11,8 @@ export default{
 
 
         shadow: '0 2px 24px rgb(57 140 235 / 42%)',
+
+        backgroundpresentation: '#fff',
+        backgroundpresentation780: '#fff',
     }
 }
