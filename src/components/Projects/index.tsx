@@ -69,7 +69,7 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
                     description: repo.description || 'Sem descrição',
                     tool: repo.language || 'Linguagem não especificada',
                     github: repo.html_url,
-                    link: repo.html_url,
+                    link: `https://${username}.github.io/${repo.name}`,
                 }));
                 setRepos(repos);
             } catch (error) {
