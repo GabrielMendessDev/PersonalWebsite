@@ -13,35 +13,15 @@ const TechlogiesData = [
     },
     {
         "id": 4,
-        "name": "Node JS"
-    },
-    {
-        "id": 5,
-        "name": "React"
-    },
-    {
-        "id": 6,
-        "name": "TypeScript"
-    },
-    {
-        "id": 7,
         "name": "MySQL"
     },
     {
-        "id": 8,
-        "name": "PHP"
-    },
-    {
-        "id": 9,
+        "id": 5,
         "name": "Git"
     },
     {
-        "id": 10,
+        "id": 6,
         "name": "Github"
-    },
-    {
-        "id": 11,
-        "name": "Virtual Studio Code"
     }
 ]
 
